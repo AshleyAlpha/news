@@ -1,3 +1,6 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +14,39 @@
 </head>
 
 <body>
+    <!-- Content block -->
+    {% block content %}
 
+    <!-- Business news -->
+    <h3> Business news</h3>
+    <ul>
+        {{ macro.displaySourceList(business)}}
+    </ul>
+
+    <!-- Entertainment news  -->
+    <h3> Entertainment news </h3>
+    <ul>
+        {{ macro.displaySourceList(entertainment)}}
+    </ul>
+    <!-- Sport news -->
+    <h3>Sport news</h3>
+    <ul>
+        {{ macro.displaySourceList(sports)}}
+    </ul>
+
+    <!-- General news -->
+    <h3> General news</h3>
+    <ul>
+        {{ macro.displaySourceList(general)}}
+    </ul>
+
+    <!-- Technology news -->
+    <h3> Technology news</h3>
+    <ul>
+        {{ macro.displaySourceList(technology)}}
+    </ul>
+
+    {% endblock%}
 </body>
 
 </html>
