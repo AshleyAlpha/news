@@ -18,9 +18,9 @@ This application is going to help people who are busy working and always miss ne
 
 ## Technologies Used
 
-* the Terminal,
-* Github,
-* Python3.6.
+* the Terminal were used,
+* Github were used,
+* Python3.6 were also used.
 
 ## Known Bugs
 
