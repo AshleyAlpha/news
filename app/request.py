@@ -74,8 +74,7 @@ def process_article(article_list):
         imageUrl=article.get('urlToImage')
         publishedAt=article.get("publishedAt")
         author=article.get("author")
-        content=article.get('content')
-
+        
         if imageUrl:
             article_object=Article(id,title,description,imageUrl,url,publishedAt,author,content)
             article_results.append(article_object)
