@@ -61,9 +61,9 @@ def process_article(article_list):
     '''
     Function  that processes the news result and transform them to a list of Objects
     Args:
-    article_list: A list of dictionaries that contain news details
+    article_list: A list of dictionaries that contain article details
     Returns :
-    news_results: A list of articles objects
+    article_results: A list of articles objects
     '''
     article_results=[]
     for article in article_list:
@@ -74,7 +74,8 @@ def process_article(article_list):
         imageUrl=article.get('urlToImage')
         publishedAt=article.get("publishedAt")
         author=article.get("author")
-        
+        content=article.get('content')
+
         if imageUrl:
             article_object=Article(id,title,description,imageUrl,url,publishedAt,author,content)
             article_results.append(article_object)
