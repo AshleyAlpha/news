@@ -19,18 +19,20 @@ h2{
     font-size: 17px;
 }
 #navs{
-    display: inline-block;
-    text-align: left;
-    text-decoration: none;
+    background-color: cornsilk;
+    /* float: left; */
+
 }
 #navs > li{
     list-style-type: none;
     display: inline-block;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
     color: darkslategray;
-    background-color: cornsilk;
-    text-align: left;
+    /* text-align: left; */
 }
-#navs > li:a{
+#navs > li>a:hover{
     text-decoration: none;
+    color:teal;
 }
