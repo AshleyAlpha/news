@@ -16,7 +16,7 @@ This application is going to help people who are busy working and always miss ne
 
 ## Cloning 
 * in terminal
-* git clone https://newsmamie.herokuapp.com/ then,
+* git clone https://github.com/AshleyAlpha/news.git then,
 * cd news
 
 ## Technologies Used
