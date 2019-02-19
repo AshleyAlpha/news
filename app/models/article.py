@@ -10,5 +10,5 @@ class Article:
         self.imageUrl = imageUrl
         self.url = url
         self.publishedAt = publishedAt
-        self.author = author
+        
         self. content = content
