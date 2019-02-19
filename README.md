@@ -4,7 +4,7 @@
 
 ## Description
 
-This application is going to help people who are busy working and always miss news. so it is going to list and preview news articles from various sources for them.
+This application is going to help people who are busy working and always miss news. so it is going to list and preview news articles from various sources for them. the news will be displayed in brief and the user will have to click on read articles to see the news articles then click on read more for more news details and the real source of news. 
 
 ## Setup Installation
 
