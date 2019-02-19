@@ -33,5 +33,13 @@ h2{
 }
 #navs > li>a:hover{
     text-decoration: none;
-    color:teal;
+    color:red;
+}
+#home{
+    color: snow;
+}
+#home:hover{
+    text-decoration: none;
+    color:red;
+    
 }
