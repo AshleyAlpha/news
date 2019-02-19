@@ -10,6 +10,9 @@ This application is going to help people who are busy working and always miss ne
 
 * Python3.6 has to be used to run the application
 * pip to be used to install packages of python
+* curl https://bootstrap.pypa.io/get-pip.py | python
+* source virtual/bin/activate
+* Flask installation.
 
 ## Cloning 
 * in terminal
