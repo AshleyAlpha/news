@@ -1,28 +1,28 @@
-##Project Title: NEWS HIGHLIGHT
+## Project Title: NEWS HIGHLIGHT
 
-##Author: Alpha Ashley MBABAZI
+## Author: Alpha Ashley MBABAZI
 
 ##Description
 
 This application is going to help people who are busy working and always miss news. so it is going to list and preview news articles from various sources for them.
 
-##Setup Installation
+## Setup Installation
 
 * Python3.6 has to be used to run the application
 * pip to be used to install packages of python
 
-##Cloning 
+## Cloning 
 * in terminal
 * git clone https://github.com/AshleyAlpha/news.git then,
 * cd news
 
-##Technologies Used
+## Technologies Used
 
 * the Terminal,
 * Github,
 * Python3.6.
 
-##Known Bugs
+## Known Bugs
 
 There are no known bugs for now.
 
