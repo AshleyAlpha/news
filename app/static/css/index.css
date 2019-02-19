@@ -1,0 +1,36 @@
+
+body{
+    background-color: darkslategray;
+    color:snow;
+    font-family: calibri;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+    color: cornsilk;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
+    color:crimson
+}
+#nn{
+    color:crimson;
+    font-size: 17px;
+}
+#navs{
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+}
+#navs > li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    color: darkslategray;
+    background-color: cornsilk;
+    text-align: left;
+}
+#navs > li:a{
+    text-decoration: none;
+}

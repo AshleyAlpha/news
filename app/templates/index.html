@@ -21,30 +21,38 @@
 
 <body>
     {% block content %}
+
     <h1>BEST NEWS HIGHLIGHT</h1>
-    <h2>GENERAL NEWS</h2>
-    <ul>
-        {{ macro.displaySourceList(general)}}
-    </ul>
-
-    <h2>BUSINESS NEWS</h2>
-    <ul>
-        {{ macro.displaySourceList(business)}}
-    </ul>
-
-    <h2>SPORTS NEWS</h2>
-    <ul>
-        {{ macro.displaySourceList(sports)}}
-    </ul>
-
-    <h2>ENTERTAINMENT NEWS</h2>
-    <ul>
-        {{ macro.displaySourceList(entertainment)}}
-    </ul>
-    <h2>TECHNOLOGY NEWS</h2>
-    <ul>
-        {{ macro.displaySourceList(technology)}}
-    </ul>
+    <div id="general">
+        <h2>GENERAL NEWS</h2>
+        <ul>
+            {{ macro.displaySourceList(general)}}
+        </ul>
+    </div>
+    <div id="business">
+        <h2>BUSINESS NEWS</h2>
+        <ul>
+            {{ macro.displaySourceList(business)}}
+        </ul>
+    </div>
+    <div id="sports">
+        <h2>SPORTS NEWS</h2>
+        <ul>
+            {{ macro.displaySourceList(sports)}}
+        </ul>
+    </div>
+    <div id="entertainment">
+        <h2>ENTERTAINMENT NEWS</h2>
+        <ul>
+            {{ macro.displaySourceList(entertainment)}}
+        </ul>
+    </div>
+    <div id="technology">
+        <h2>TECHNOLOGY NEWS</h2>
+        <ul>
+            {{ macro.displaySourceList(technology)}}
+        </ul>
+    </div>
     {% endblock %}
 </body>
 

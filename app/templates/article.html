@@ -2,6 +2,10 @@
 <!-- Content block -->
 {% block content %}
 
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
 
 {% for article in article %}
 <div class="col-md-3 articles-details">
@@ -11,10 +15,10 @@
     <div class="words">
         <h4 class="text-bold"> {{article.title}} </h4>
         <p class="small">- {{article.author}} </p>
-        <p class="small">Posted on {{article.publishedAt}}</p>
+        <!-- <p class="small">Posted on {{article.publishedAt}}</p> -->
         <hr>
         <p> {{article.description}}...
-            <a href={{article.url}} target="_blank">Read More</a>
+            <a id="nn" href={{article.url}} target="_blank">Read More</a>
         </p>
     </div>
 </div>
