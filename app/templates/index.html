@@ -1,59 +1,51 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
-
-<!DOCTYPE html>
+<!-- styles block-->
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<!-- Content block -->
+<h1>{{ message}}</h1>
+<!Doctype html>
 <html>
 
 <head>
     <meta charset="utf-8">
     {% if title %}
-    <title> {{ title }}</title>
+    <title>{{ title }}</title>
     {% else %}
-    <title> Welcome to the best news Review website </title>
+    <title>Highlight News Website</title>
     {% endif %}
 </head>
 
 <body>
-    <!-- Styles block -->
-
-    {% block styles%}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    {% endblock %}
-
-    <!-- Content block -->
     {% block content %}
-
-    <!-- Business news -->
-    <h3> Business news</h3>
-    <ul>
-        {{ macro.displaySourceList(business)}}
-    </ul>
-
-    <!-- Entertainment news  -->
-    <h3> Entertainment news </h3>
-    <ul>
-        {{ macro.displaySourceList(entertainment)}}
-    </ul>
-    <!-- Sport news -->
-    <h3>Sport news</h3>
-    <ul>
-        {{ macro.displaySourceList(sports)}}
-    </ul>
-
-    <!-- General news -->
-    <h3> General news</h3>
+    <h1>BEST NEWS HIGHLIGHT</h1>
+    <h2>GENERAL NEWS</h2>
     <ul>
         {{ macro.displaySourceList(general)}}
     </ul>
 
-    <!-- Technology news -->
-    <h3> Technology news</h3>
+    <h2>BUSINESS NEWS</h2>
+    <ul>
+        {{ macro.displaySourceList(business)}}
+    </ul>
+
+    <h2>SPORTS NEWS</h2>
+    <ul>
+        {{ macro.displaySourceList(sports)}}
+    </ul>
+
+    <h2>ENTERTAINMENT NEWS</h2>
+    <ul>
+        {{ macro.displaySourceList(entertainment)}}
+    </ul>
+    <h2>TECHNOLOGY NEWS</h2>
     <ul>
         {{ macro.displaySourceList(technology)}}
     </ul>
-
-    {% endblock%}
+    {% endblock %}
 </body>
 
 </html>

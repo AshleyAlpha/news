@@ -1,15 +1,19 @@
 {% macro displaySourceList(source_list) %}
-
 {% for source in source_list %}
-<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
-    <!-- <img src="{{ source.name }}" alt="{{ source.title }} name" class="img-responsive"> -->
-    <li class="text-center">
-        <a href="/article/{{source.id}}">
-            {{ source.name|truncate(10)}}</a>
-        <!-- {{ source.description }} -->
-    </li>
+<div class="col-md-3 single-source">
+    <div class="row">
+        <div class="col-md-4 source-name">
+            <h3>{{ source.name }}</h3>
+
+        </div>
+        <div class="col-md-7 source-details">
+            <p> {{source.description|truncate(150)}}
+                <br>
+                <a href="/article/{{source.id}}">Read Articles</a>
+            </p>
+        </div>
+    </div>
 </div>
 
 {% endfor %}
-
-{% endmacro %}
+{% endmacro%}
