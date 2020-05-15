@@ -7,7 +7,7 @@ body{
 }
 h1{
     text-align: center;
-    color: cyan
+    color: cornsilk;
     font-family: 'Times New Roman', Times, serif;
 }
 h2{
@@ -28,7 +28,7 @@ h2{
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    color: darkslategray;
+    color: cyan;
    
 }
 #navs > li>a:hover{
